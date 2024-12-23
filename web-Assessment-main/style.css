@@ -7,6 +7,8 @@
   box-sizing: border-box;
   font-family: "Poppins";
   overflow-x: hidden;
+  transition : all 0.4s ease-in-out;
+  scroll-behavior: smooth;
 }
 
 
@@ -66,11 +68,17 @@ a:hover{
   width: 100%;
   display: flex;
   justify-content: space-between;
+  padding: 4rem;
 }
 
 .hero-img{
-  
   width: 40%;
+  object-fit: contain;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+.hero-img:hover{
+  border: 5px solid blueviolet;
 }
 .hook-container{
   height: 100%;
@@ -83,6 +91,7 @@ a:hover{
 }
 .hook-title, .hook-sub_title{
   font-size: 3rem;
+  overflow: hidden;
 }
 
 button{
@@ -97,11 +106,12 @@ button{
   border: none;
   border-radius: 10px;
   margin: 1rem;
-
+  overflow: hidden;
 
 }
 .hero-btns-container{
   height: fit-content;
+  overflow: hidden;
 
 }
 button:hover{
@@ -112,7 +122,6 @@ button:hover{
 /*section two yahan se*/
 .section-two{
   height: 80vh;
-  background-color: rgb(241, 241, 205);
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -154,6 +163,9 @@ button:hover{
   border-radius: 20px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
+.product:hover{
+  border: 7px solid yellow;
+}
 
 .product>img{
   height: 100%;
@@ -171,6 +183,9 @@ button:hover{
   position: absolute;
   right: 1rem;
   bottom: 1rem;
+  background-color: yellow;
+  padding: 0.5rem;
+  border-radius: 10px;
 
 }
 
@@ -178,7 +193,6 @@ button:hover{
 
 .section-three{
   height: 80vh;
-  background-color: rgb(241, 241, 205);
   width: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -198,15 +212,128 @@ button:hover{
 .s-three-upper-img-container> img{
   height: 100%;
   width: 100%;
+  object-fit: cover;
+
+}
+.s-three-upper-img-container:hover{
+  border: 7px solid blueviolet;
+
 
 }
 .s-three-lower-container{
-  height: 60%;
+  height: 80%;
   width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  overflow:hidden;
 }
 .s-three-title{
   font-size: 3rem;
+  overflow: hidden;
+}
+
+
+/*section four yahan se*/
+
+.section-four{
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow: hidden;
+}
+
+.oath-container{
+  height: 60%;
+  width: 55%;
+  display : flex;
+  flex-direction: column;
+}
+
+
+.four-img-container{
+  height: 80%;
+  width: 30%;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.four-img-container:hover{
+  border: 7px solid black;
+}
+.four-img-container > img{
+  height: 100%;
+  width: 100%;
+}
+.s-definition{
+  font-size: 1.5rem;
+}
+
+.employer-info{
+  font-size: 2rem;
+}
+#bold-text{
+  background-color: blueviolet;
+  color : white
+}
+#bold-text:hover{
+  background-color: white;
+  color: black;
+}
+
+/*footer yahan se*/
+footer{
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  overflow: hidden;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+.contact-form{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border: 1px dashed black;
+  padding: 2rem;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.footer-title{
+  overflow: hidden;
+  font-size: 3rem;
+}
+.form-control{
+  width: fit-content;
+  display: flex;
+  gap: 1rem;
+}
+.form-control>input[type="text"]{
+  border:none;
+  border-bottom: 3px solid black;
+  padding: 0.3rem;
+  outline: none;
+  
+}
+.name-email-inputs-container{
+  display: flex;
+  gap: 2rem;
+
+}
+
+.send-msg-btn{
+  margin : 0%;
+}
+
+
+.other-footer-infos-container{
+  height: 10vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
