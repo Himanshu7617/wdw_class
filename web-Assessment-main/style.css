@@ -5,4 +5,55 @@
   margin : 0%;
   padding : 0%;
   box-sizing: border-box;
+  font-family: "Poppins";
+  overflow-x: hidden;
+}
+
+
+
+header{
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.logo{
+  height: 100%;
+  width: fit-content;
+  padding: 1rem;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  font-weight: bold;
+
+}
+.navbar{
+  height: 100%;
+  width: 40%;
+  display : flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.nav-items{
+  width: 100%;
+  display : flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-decoration: none;
+  list-style: none;
+}
+.nav-item{
+  height: fit-content;
+
+}
+a{
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover{
+  color: purple
 }
