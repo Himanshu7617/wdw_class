@@ -269,6 +269,7 @@ button:hover{
 }
 .s-definition{
   font-size: 1.5rem;
+  overflow: hidden;
 }
 
 .employer-info{
